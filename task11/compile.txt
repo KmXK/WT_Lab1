@@ -1,0 +1,1 @@
+cd ../task10/bin/ && jar cfm ../../task11/task9.jar ../../task11\manifest.txt . && cd ../../task11/ && java -jar task9.jar
