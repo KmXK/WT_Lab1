@@ -1,12 +1,12 @@
 package task15.models;
 
 public class Book implements Comparable<Book> {
-    private String isbn;
-    private String title;
-    private String author;
-    private int price;
+    private final String isbn;
+    private final String title;
+    private final String author;
+    private final int price;
 
-    private static int edition;
+    private static int edition; // why
 
     public Book(String isbn, String title, String author, int price) {
         this.isbn = isbn;

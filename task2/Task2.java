@@ -20,6 +20,8 @@ public class Task2 {
 
         PointCheckerService checker = new PointCheckerService();
 
-        System.out.println(checker.isPointInRects(point, rects));
+        System.out.println(checker.isPointInRects(point, rects)
+                ? "Point inside the area or on the bound."
+                : "Point outside the are.");
     }
 }

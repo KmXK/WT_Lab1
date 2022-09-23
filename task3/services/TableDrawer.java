@@ -6,8 +6,8 @@ import java.util.List;
 public class TableDrawer {
     public static final int MaxColumnsCount = 10;
 
-    private List<String[]> rows;
-    private int columnsCount;
+    private final List<String[]> rows;
+    private final int columnsCount;
 
     public TableDrawer(int columnsCount) {
         if(columnsCount <= 0) throw new IllegalArgumentException("Columns count cannot be less than or equal to zero.");

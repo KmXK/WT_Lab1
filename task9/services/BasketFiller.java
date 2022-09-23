@@ -7,7 +7,7 @@ import task9.models.Color;
 import java.util.Random;
 
 public class BasketFiller {
-    private Random random;
+    private final Random random;
 
     public BasketFiller() {
         random = new Random();

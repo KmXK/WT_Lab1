@@ -1,9 +1,9 @@
 package task16.models;
 
 public class Book {
-    private String title;
-    private String author;
-    private int price;
+    private final String title;
+    private final String author;
+    private final int price;
 
     private static int edition;
 

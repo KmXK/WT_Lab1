@@ -1,9 +1,9 @@
 package task14.models;
 
-public class Book {
-    private String title;
-    private String author;
-    private int price;
+public class Book implements Cloneable {
+    private final String title;
+    private final String author;
+    private final int price;
 
     private static int edition;
 
@@ -52,7 +52,7 @@ public class Book {
     }
 
     @Override
-    protected Object clone() {
+    public Object clone() {
         return new Book(title, author, price);
     }
 }

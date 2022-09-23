@@ -3,8 +3,8 @@ package task13.models;
 import task12.models.Book;
 
 public class ProgrammingBook extends Book {
-    private String language;
-    private int level;
+    private final String language;
+    private final int level;
 
     public ProgrammingBook(String title, String author, int price, String language, int level) {
         super(title, author, price);
@@ -42,9 +42,9 @@ public class ProgrammingBook extends Book {
         }
 
         var book = (ProgrammingBook)obj;
-        return  book.getAuthor() == getAuthor() &&
+        return book.getAuthor().equals(getAuthor()) &&
                 book.getPrice() == getPrice() &&
-                book.getTitle() == getTitle() &&
+                book.getTitle().equals(getTitle()) &&
                 book.getLanguage().equals(getLanguage()) &&
                 book.getLevel() == getLevel();
     }
